@@ -132,17 +132,22 @@ header {
 
 
 .gallery {
-	display: inline-grid;
 }
 
 .thumbnail_01 {
 	background-color: #EEEEEE;
-	max-width: 50%;
 }
 
 .thumbnail_02 {
-	background-color: #EDEDED;
-	max-height: 50%;
+	background-color: #EFEFEF;
+}
+
+.thumbnail_03 {
+	background-color: #ABABAB;
+}
+
+.thumbnail_04 {
+	background-color: #CCCCCC;
 }
 
 
