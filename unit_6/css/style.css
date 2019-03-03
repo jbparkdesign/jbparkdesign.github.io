@@ -1,0 +1,320 @@
+
+/*----------------*/
+/*---- GLOBAL ----*/
+/*----------------*/
+
+header, main, hr, footer {
+	margin: 2% 8% 2% 8%;
+}
+
+
+
+h1, h3, h5, h6, nav, a, li {
+	font-family: 'Lato', sans-serif;
+	color: #222222;	
+}
+
+h1 {
+	font-size: 8em;
+	font-weight: 700;
+	margin-bottom: -40px;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+nav {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+
+
+h2, h4, p {
+	font-family: 'Noto Serif JP', serif;
+	color: #222222;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+
+a {
+	color: #222222;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover {
+	background: #fdff32;
+}
+
+
+
+
+/*----------------*/
+/*--- TOP NAV ----*/
+/*----------------*/
+
+	#topnav {
+		height: 40px;
+		padding-top: 20px;
+	}
+
+	#menu_icon {
+		float: left;
+		margin-left: 2%;
+	}
+
+		#top {
+			width: 36px;
+			height: 4px;
+			background: #222222;
+		}
+
+		#bottom {
+			margin-top: 8px;
+			width: 24px;
+			height: 4px;
+			background: #222222;
+		}
+
+
+	#menu_icon #bottom:hover {
+		float: left;
+		width: 36px;
+	}
+
+
+	#topnav_links {
+		float: right;
+		margin-right: 2%;
+	}
+
+		.topnav_links {
+			margin: 0 8px;
+			padding: 4px 8px;
+			text-align: center;
+		}
+
+
+/*----------------*/
+/*---- HEADER ----*/
+/*----------------*/
+
+header {
+	padding-top: 8%;
+	padding-bottom: 4%;
+	max-width: 90%
+}
+
+
+/*----------------*/
+/*--- PROJECTS ---*/
+/*----------------*/
+
+
+	#group_01 {
+		width: 50%;
+		min-width: 400px;
+		float: left;
+		background-color: #EEEEEE;
+	}
+
+	#group_02 {
+		width: 50%;
+		min-width: 400px;
+		float: left;
+	}
+
+	#group_03 {
+		clear: both;
+		width: 50%;
+		min-width: 400px;
+		float: left;
+	}
+
+	#group_04 {
+		width: 50%;
+		min-width: 400px;
+		float: left;
+	}
+
+
+		.thumbnail_01 {
+			width: 100%;
+			height: 500px;
+			outline: 2px solid #ffffff;
+			background: #eeeeee;
+		}
+		.thumbnail_02 {
+			width:50%;
+			height: 500px;
+			background: #b9b9b9;
+			outline: 2px solid #ffffff;
+			float: left;
+		}
+		.thumbnail_03 {
+			width: 50%;
+			height: 250px;
+			background: #ababab;
+			outline: 2px solid #ffffff;
+			float: left;
+		}
+		.thumbnail_04 {
+			background-color: #cccccc;
+			height:250px;
+			width: 50%;
+			outline: 2px solid #ffffff;
+			float: left;
+		}
+		.thumbnail_05 {
+			width: 100%;
+			height: 250px;
+			outline: 2px solid #ffffff;
+			background: #dddddd;
+		}
+
+	#projects img {
+		float: left;
+		margin: 20px 0 0 20px;
+	}
+
+	#projects a {
+		float: left;
+		margin: 20px 0 0 20px;
+	}
+
+
+/*----------------*/
+/*--- CLIENTS ----*/
+/*----------------*/
+
+	#clients {
+		clear: both;
+		padding: 8% 0 16% 0;
+	}
+
+		.client_logo {
+			float: left;
+			display: inline;
+			width: 12.5%;
+			min-width: 150px;
+		}
+
+
+/*----------------*/
+/*--- TOOLKIT ----*/
+/*----------------*/
+
+#colorblock {
+	clear: both;
+}
+
+	.tab_content {
+		float: left;
+		width: 75%;
+		padding: 8% 0 8%.0;
+		background: #efefef;
+	}
+
+
+	#tabnav {
+		float: left;
+		width: 25%;
+		padding: 10% 0 4%.0;
+		background: #efefef;
+	}
+
+
+/*----------------*/
+/*---- RESUME ----*/
+/*----------------*/
+
+hr {
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	display: inline-block;
+	float: left;
+	vertical-align: text-top;
+}
+
+li {
+	font-size: 1em;
+	font-style: bold;
+
+	padding-bottom: 24px;
+	padding-right: 100px
+}
+
+	#subscribe {
+		float: left;
+		vertical-align: text-top;
+	}
+
+		input {
+			text-decoration: none;
+			bottom-border: none;
+			margin: 0 0 10px 0;
+		}
+
+		input:focus {
+			text-decoration: none;
+			border: none;
+			margin: 0 0 10px 0;
+		}
+	
+
+		.button_01 {
+			background-color: #ffffff;
+			border: 2px solid #222222;
+
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2em;
+			font-style: bold;
+			text-align: center;
+			color: #222222;
+
+			width: 200px;
+			padding: 8px 24px;
+		}
+
+		.button_01:hover {
+			background-color: #222222;
+
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2em;
+			font-style: bold;
+			text-align: center;
+			color: #ffffff;
+
+			width: 200px;
+			padding: 8px 24px;
+		}
+
+	#copyright {
+		clear: both;
+		text-align: center;
+		padding: 8% 0 2% 0;
+	}
+
+
