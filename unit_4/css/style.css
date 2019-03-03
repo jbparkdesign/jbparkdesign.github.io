@@ -1,0 +1,259 @@
+
+
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------------- GLOBAL -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Noto+Serif+JP:300,400" rel="stylesheet");
+
+
+body{
+	background-size: 12em;
+
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 8em;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'Noto Serif JP', serif;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+h5 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-size: .8em;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	color: #222222;
+}
+
+
+
+
+.headline, .gallery, .clients, .toolkit, .footer {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- NAV BAR -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.navbar {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-style: bold;
+
+}
+
+
+	.menuicon {
+		width: 36px;
+		height: 4px;
+		background: #999999;
+		float: left;
+	}
+
+	.menuicon:hover {
+		background: #222222 !important;
+	}
+
+		#bottombar {
+			margin-top: 12px;
+			width: 24px;
+			height: 4px;
+			background: #999999
+		}
+
+	.navlinks {
+		float: right;
+		margin-right: 24px;
+	}
+
+		#link_resume {
+			margin-left: 24px;
+		}
+
+		#link_linkedin {
+			margin-left: 24px;
+		}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Headline ----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.headline {
+	padding-top: 200px;
+	padding-bottom: 160px;
+	max-width: 90%
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/*---------------------------- Project Gallery -------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+.gallery {
+	display: inline-grid;
+}
+
+.thumbnail_01 {
+	background-color: #EEEEEE;
+	max-width: 50%;
+}
+
+.thumbnail_02 {
+	background-color: #EDEDED;
+	max-height: 50%;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- CLIENTS -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- TOOLKIT -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.toolkit {
+	display: inline-flex;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------------- FOOTER -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-style: bold;
+
+	padding-bottom: 24px;
+	padding-right: 100px
+}
+
+
+
+
+.subscribe{
+	display: inline-block;
+}
+
+
+
+input {
+	border: none;
+	box-shadow: none;
+	padding-bottom: 24;
+}
+
+input[type=text]:focus {
+	border-bottom: 2px solid #222222;
+	box-shadow: none;
+}
+
+
+
+
+.button01 {
+	background-color: #ffffff;
+	border: 2px solid #222222;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: center;
+	color: #222222;
+
+	width: 250px;
+	padding: 10px 24px;
+}
+
+.button01:hover {
+	background-color: #222222;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: center;
+	color: #ffffff;
+
+	width: 250px;
+	padding: 10px 24px;
+}
+
+
+.copyright {
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
