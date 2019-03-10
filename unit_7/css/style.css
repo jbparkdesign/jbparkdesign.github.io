@@ -1,0 +1,617 @@
+
+/*--- HOMEPAGE ---*/
+
+
+/*----------------*/
+/*---- GLOBAL ----*/
+/*----------------*/
+
+body {
+	margin: 0 0 0 0;
+}
+
+
+h1, h2, h3, h4, nav, a, li, .wip {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #222222;
+}
+
+h1 {
+	font-size: 12em;
+	font-weight: 700;
+	margin: 10% 0 -60px 0;
+	padding-left: 16%;
+	color: transparent;
+	-webkit-text-stroke-width: .5px;
+   	-webkit-text-stroke-color: #222222;
+}
+
+h2 {
+	margin: 0 0 0 0;
+	font-size: 6em;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke-width: .5px;
+   	-webkit-text-stroke-color: #222222;	
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+nav {
+	font-size:.8em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #AAAAAA;
+	transition: 200ms linear;
+}
+
+ul {
+	padding: 0 0 0 0;
+	list-style: none;
+}
+
+li {
+	padding: 0 10px 0 0;
+	font-size: .8em;
+	display: inline-block;
+}
+
+
+
+
+h5, h6, p {
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 300;
+	color: #222222;
+}
+
+h5 {
+	font-size: 3em;
+}
+
+h6 {
+	margin: 0 0 0 0;
+	font-size: 1.5em;
+}
+
+p {
+	
+}
+
+.wip {
+	font-weight: 700;
+	font-size: 10em;
+	color: rgba(100,0,0,.3);
+}
+
+
+
+
+/*----------------*/
+/*-- NAVIGATION --*/
+/*----------------*/
+
+#nav {	
+	margin: 20px 0 0 0;
+
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0%;
+  	}
+
+  	#topnav {
+  		height: 40px;
+  		padding: 20px;
+  	}
+
+/*  		#menu {
+  			float: left;
+  			margin: 0 0 0 2%;
+  		}
+
+	  		#topbar {
+	  			width: 36px;
+	  			height: 2px;
+	  			background: #222222;
+	  		}
+
+	  		#bottombar {
+	  			margin: 8px 0 0 0;
+	  			width:	24px;
+	  			height: 2px;
+	  			background: #222222;
+	  		}
+
+	  	#menu:hover {
+	  		animation: menu_shift 600ms infinite;
+	  		display: inline-block;
+	  		transition: 200ms linear;
+	  	}
+
+	  		@keyframes menu_shift {
+	  			from {
+	  				transform: translateX(0px);
+	  			}
+	  			to {
+	  				transform: translateX(20px);
+	  			}
+	  		}
+
+
+	  		#menu:hover div {
+	  			background-color: #AAAAAA;
+	  			transition: 200ms linear;
+	  		}*/
+
+
+
+
+
+	  		#topbar {
+	  			width: 36px;
+	  			height: 2px;
+	  			background: #222222;
+	  		}
+
+	  		#bottombar {
+	  			margin: 8px 0 0 0;
+	  			width:	24px;
+	  			height: 2px;
+	  			background: #222222;
+	  		}
+
+/* Menu-span Color Overlay (background) */
+.menu {
+  float: left;
+  display: inline-block;
+  margin: 0 0 0 2%;
+
+  font-size: 1em;
+  color: #222222;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: #AAAAAA;
+  text-decoration: none;
+  cursor: pointer; cursor: hand;
+
+  animation: menu_shift 600ms;
+  display: inline-block;
+  transition: 200ms linear;
+}
+
+.menu:focus {
+
+}
+
+	  	@keyframes menu_shift {
+	  		from {
+	  			transform: translateX(0px);
+	  		}
+			to {
+  				transform: translateX(10px);
+   			}
+   		}
+
+
+/*----------------*/
+/*- MENU OVERLAY -*/
+/*----------------*/
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background: #FFFFFF; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+	position: relative;
+    margin: auto; 
+    width: 75%;
+    top: 25%; /* 25% from the top */
+    text-align: center; /* Centered text/links */
+    
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+   	font-family: 'Noto Serif JP', serif;
+	font-weight: 300;
+	color: #222222;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* Change Nav-Links color on mouseover*/
+.overlay a:hover, .overlay a:focus {
+    color: #AAAAAA;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+
+
+.navcard_01 {
+	float: left;
+	display: inline-block;
+	height: 200px;
+	width: 37%;
+	outline: .5px solid #222222;
+
+	font-size: 2em;
+}
+		#pagenavcards {
+		display: inline;
+		margin: 0;
+	}
+
+.navcard_02 {
+	clear: both;
+	display: block;
+	height: 100px;
+	outline: .5px solid #222222;
+}
+	
+	#newtab_cards {
+		margin: 0 0 0 1%;
+		width: 24%;
+		float: left;
+		display: block;
+
+		font-size: 2em;
+	}
+
+.navcard_03 {
+	float: left;
+	display: inline-block;
+	margin: auto;
+	height: 50px;
+	width: 25%;
+	outline: .5px solid #222222;
+}
+	
+	#project_cards {
+		margin: 80px 0 0 0;
+		width: 99%;
+		float: left;
+	}	
+
+	#project_cards span {
+	margin: 0 0 0 10px;	
+	font-family: 'Lato', sans-serif;	
+	float: left;
+	font-size: 3em;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke-width: .5px;
+   	-webkit-text-stroke-color: #222222;
+	}
+
+
+
+
+
+
+/*-----------------*/
+/*- TOP NAV LINKS -*/
+/*-----------------*/
+
+	  	#topnav_links {
+	  		float: right;
+	  		margin: 0 2% 0 0;
+	  	}
+
+	  		#topnav_links a {
+	  			margin: 0 8px;
+	  			padding: 4px 8px;
+	  			text-align: center;
+	  		}
+
+	  			.newtab {
+	  				margin: 0 0 0 4px;
+	  				padding: 0 0 3px 0;
+	  				display: inline-block;
+	  				transform: rotateZ(225deg);
+	  			}
+
+	  			a:hover .newtab {
+					animation: bouncetop 1000ms infinite;
+					display: inline-block;
+					transition: 500ms linear;
+				}
+
+				@keyframes bouncetop {
+		  			from {
+		  				transform: translateY(-2px) rotateZ(225deg);
+		  			}
+		  			to {
+		  				transform: translateY(0px) rotateZ(225deg);
+		  			}
+	  			}
+	 
+
+
+	#pagenav {
+	  		margin: 2% 0 0 3%;
+	  	}
+
+	  	.pagenav_links {
+	  		display: flex;
+	  		margin: 0 0 4% 0;
+
+	  		writing-mode: vertical-lr;
+			text-orientation: mixed;
+			transform: rotateZ(180deg);
+	  	}
+
+	  	#home {
+	  		margin: 0 0 16% 0;
+	  		font-weight: 700;
+	  	}
+
+	  	#arrow {
+	  		margin: 0 0 0 .4%;
+
+	  		animation: bounce 1000ms infinite;
+	  		display: inline-block;
+	  		transition : 500ms ease;
+		}
+
+	  		@keyframes bounce {
+	  			from {
+	  				transform: translateY(-2px);
+	  			}
+	  			to {
+	  				transform: translateY(0px);
+	  			}
+	  		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------*/
+/*----- HERO -----*/
+/*----------------*/
+
+#hero {
+	position: all;
+	margin: -35% 0 0 0;
+	padding: 0 4% 0 16%;
+	height: 30vh;
+}
+
+
+
+
+/*----------------*/
+/*--- PROJECTS ---*/
+/*----------------*/
+
+#project_wrapper {
+	width: 100vw;
+	height: 250vh;
+	background-color: #DBDAD5;
+	padding: 20px 0 120px 0;
+
+}
+
+	#gallery {
+		margin: 40px 16% 0 16%;
+	}
+
+		.project {
+			padding: 4% 0 2% 2%;
+			margin: 0 0 20px 0;
+			background: #FFFFFF;
+			box-shadow: 0 0 80px rgba(0,0,0,.05);
+		}
+
+		.project:hover {
+			padding: 4% 0 2% 2%;
+			margin: 0 0 20px 0;
+			background: #FFFFFF;
+			box-shadow: 0 0 80px rgba(0,0,0,.8);
+		}
+
+			.project_label {
+				margin:	100px 0 1% 1%;
+				width: 50%;
+			}
+
+
+		.project #project_01 {
+			background-image: url("images/place_image_here.png");
+			background-repeat: inherit;
+		}
+
+		#project_01 {
+			outline-color: #2F6ACC;
+		}
+		#project_02 {
+			outline-color: #CCFA02;
+		}
+		#project_03 {
+			outline-color: #222222;
+		}
+
+
+
+
+
+
+
+/*----------------*/
+/*---- ABOUT -----*/
+/*----------------*/
+
+#about {
+	margin: -22% 0 0 0;
+}
+
+
+
+/*----------------*/
+/*---- RESUME ----*/
+/*----------------*/
+
+
+footer {
+	margin: 80px 0 0 16%;
+
+}
+
+hr {
+	clear: both;
+}
+
+.footer_column {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+}
+
+.footer_column li {
+	padding-bottom: 24px;
+	padding-right: 100px;
+	display: block;
+}
+
+
+	#subscribe {
+		float: left;
+		vertical-align: text-top;
+	}
+
+		input {
+			margin: 0 0 10px 0;
+			width: 75%;
+			text-decoration: none;
+			bottom-border: none;
+
+		}
+
+		input:focus {
+			margin: 0 0 10px 0;
+			width: 75%;
+			text-decoration: none;
+			border: none;
+		}
+	
+
+		.button_01 {
+			padding: 20px;
+			width: 25%;
+			
+			background-color: #ffffff;
+			border: 2px solid #222222;
+
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2em;
+			font-style: bold;
+			text-align: center;
+			color: #222222;
+			
+
+			
+		}
+
+		.button_01:hover {
+			width: 25%;
+			padding: 20px;
+
+			background-color: #222222;
+
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2em;
+			font-style: bold;
+			text-align: center;
+			color: #ffffff;
+		}
+
+	#copyright {
+		clear: both;
+		padding: 8% 0 8% 0;
+		text-align: center;	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
