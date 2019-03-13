@@ -1,0 +1,177 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    font-family: "Roboto", sans-serif;
+
+    color: #fff;
+    background-color: #888888;
+}
+
+h2 {
+    font-size: 1.7em;
+    line-height: 1;
+}
+/* PUSH MENU */
+#menu-switch{
+  display:none;
+
+}
+#menu {
+    position: absolute;
+    top: 0;
+    left: -90vw;
+
+    width: 90vw;
+    height: 100%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+
+    transition: all 300ms ease-in;
+    text-align: center;
+
+    background-color: #fff;
+}
+#menu .brand {
+    height: 51px;
+
+    font-size: 70px;
+    font-weight: 900;
+    line-height: .6;
+
+    color: #ddd;
+}
+#menu ul {
+    padding: 0;
+    margin-top: 30px;
+}
+
+#menu ul li a {
+    display: block;
+
+    font-weight: 900;
+    line-height: 50px;
+
+    transition: all .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #232629;
+    border-top: 1px solid #eee;
+}
+#menu ul li:last-child a {
+    border-bottom: 1px solid #eee;
+}
+#menu ul li a:hover {
+    letter-spacing: 1px;
+}
+#menu-switch:checked ~ #menu {
+    left: 0;
+    position: fixed;
+}
+/* MAIN PAGE */
+.page-wrap {
+   
+    padding: 50px;
+    box-sizing: border-box;
+    
+    transition: all 300ms ease-in;
+}
+#menu-switch:checked ~ .page-wrap {
+   position: fixed;
+    margin-left: 90%;
+    width: 100%;
+
+ 
+}
+
+/* MENU TOGGLE ICON */
+#menu-toggle:focus {
+    outline: none;
+}
+#menu-toggle {
+    display:inline-block;
+    position: relative;
+
+    width: 51px;
+    height: 51px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50px;
+
+    background: transparent;
+    transition: all 500ms ease;
+
+}
+#menu-toggle:before,
+#menu-toggle:after {
+    position: absolute;
+
+    content: "";
+
+    background-color: #222;
+}
+
+#menu-toggle:before {
+    top: 20px;
+    left: 12px;
+
+    width: 24px;
+    height: 2px;
+}
+#menu-toggle:after {
+    top: 30px;
+    left: 12px;
+
+    width: 16px;
+    height: 2px;
+}
+
+    @keyframes menu_shift_right {
+        from { transform: translateX(0); }
+        to { transform: translateX(10px); }
+    }
+
+    #menu-toggle:hover {
+        animation: menu_shift_right 600ms forwards;
+        display: inline-block;
+        transition: 200ms linear;
+    }
+
+
+
+    @keyframes menu_shift_left {
+        from { transform: translateX(0); }
+        to { transform: translateX(-10px); }
+    }
+
+
+#menu-switch:checked ~ .page-wrap #menu-toggle:before {
+   transform: rotate(-45deg) translateX(-7px);
+   transition: all 500ms ease;
+
+}
+
+#menu-switch:checked ~ .page-wrap #menu-toggle:after {
+   transform: rotate(45deg) translateX(-7px);
+   width: 24px;
+   transition: all 500ms ease;
+}
+/* CONTENT CONTAINER */
+.container {
+    position: fixed;
+    max-width: 600px;
+    min-width: 600px;
+    margin: auto;
+}
+
+p{
+  text-decoration:line-through;
+}
+
+a{
+  font-size: .5em;
+}

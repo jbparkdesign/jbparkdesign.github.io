@@ -17,55 +17,45 @@
 <!---------------->
 
 	
-<!-- 	<nav id="topnav">
-		<div id="menu">
+	<nav id="topnav">
+		<!-- <div id="menu">
 			<a href="#">
 			<div id="topbar"></div>
 			<div id="bottombar"></div>
 			</a>
 		</div> -->
 
+		<div id="myNav" class="overlay">
 
-<div class="nav-right visible-xs">
-  <div class="button" id="btn">
-    <div class="bar top"></div>
-    <div class="bar middle"></div>
-    <div class="bar bottom"></div>
-  </div>
-</div>
-<!-- nav-right -->
-<main>
+		<!-- button to close overlay -->
+			 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+		<!-- overlay content -->
+			<div class="overlay-content">
+				<div id="pagenav_cards">
+				<a class="navcard_01" href="#projects">Work</a>
+		    	<a class="navcard_01" href="#about">About</a>
+		    	</div>
 
-  <nav>
-    <div class="nav-right hidden-xs">
-      <div class="button" id="btn">
-        <div class="bar top"></div>
-        <div class="bar middle"></div>
-        <div class="bar bottom"></div>
-      </div>
-    </div>
-    <!-- nav-right -->
-  </nav>
-
-  <a href="https://codepen.io/tonkec/" class="ua" target="_blank">
-    <i class="fa fa-user"></i>
-  </a>
-</main>
-
-<div class="sidebar">
-  <ul class="sidebar-list">
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
-  </ul>
-</div>
+		    	<div id="newtab_cards">
+		    	<a class="navcard_02" href="#">Resume</a>
+		    	<a class="navcard_02" href="#">Linkedin</a>
+		    	</div>
 
 
+		    	<div id="project_cards">
+		    	<a class="navcard_03" href="#"><span>01</span>Project Name 01</a>
+		    	<a class="navcard_03" href="#"><span>02</span>Project Name 02</a>
+		    	<a class="navcard_03" href="#"><span>03</span>Project Name 03</a>
+		    	<a class="navcard_03" href="#"><span>04</span>Project Name 04</a>
+		    	</div>
+		    </div>
+		</div>
 
-
-
+		<span onclick="openNav()"><a class="menu" data-toggle="collapse" data-target="#myNav">
+			<div id="topbar"></div>
+			<div id="bottombar"></div>
+		</a></span>		
 
 
 
@@ -300,7 +290,16 @@
 			
 		</section>
 
-		
+		<section class="footer_column" id="subscribe">
+			
+			<p>Get notified of new projects.</p>
+
+			<div>
+			<input class="input_email" type="text" name="email" value="your@email.com"><br>
+			<input class="button_01" type="submit" value="⮑">
+			</div>
+
+		</section>
 
 	</footer>
 	<section id="copyright">
